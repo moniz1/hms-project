@@ -1,3 +1,13 @@
+# HmsProject
+
+This project was built to test the libraries implementation, clone the code & run it by the following command.
+
+`npm start`
+
+## Library
+
+[npm](https://www.npmjs.com/package/hms-lib)
+
 ## Guide
 
 ### Header Component
