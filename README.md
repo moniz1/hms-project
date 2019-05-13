@@ -1,13 +1,3 @@
-# HmsProject
-
-This project was built to test the libraries implementation, clone the code & run it by the following command.
-
-`npm start`
-
-## Library
-
-[npm](#https://www.npmjs.com/package/hms-lib)
-
 ## Guide
 
 ### Header Component
@@ -41,12 +31,16 @@ Concrete class for inheritance of the lib's menu classes.
 ```
 /**Text to display. */
 text: string;
+
 /**Indicate if current menu if active. */
 isActive: boolean;
+
 /**Wrapper classes. */
 classes: string[];
+
 /**Router link associate with your root app router*/
 routerLink: string;
+
 /**Merged wrapper classes of this. */
 wrapperClass(): string;
 ```
@@ -190,6 +184,7 @@ Model that login form emit onSubmit
 ```
 /**Login username. */
 username: string;
+
 /**Login password. */
 password: string;
 ```
