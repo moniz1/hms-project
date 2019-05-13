@@ -1,0 +1,7 @@
+<ul class="list-group-flush">
+    <ng-template ngFor let-menuItem [ngForOf]="menuItems">
+        <a class="list-group-item list-group-item-action" [routerLink]="menuItem.routerLink" [routerLinkActive]="'active'" [ngClass]="menuItem.classes">
+            {{menuItem.text}}
+        </a>
+    </ng-template>
+</ul>

@@ -1,0 +1,11 @@
+<div *ngIf="menuItem.hasDropDownItems()" class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <ng-template ngFor let-dropDownItem [ngForOf]="menuItem.dropDownItems">
+      <div *ngIf="dropDownItem.hasDivider" class="dropdown-divider"></div>
+      <a class="dropdown-item" 
+        [ngClass]="menuItem.wrapperClass()"
+        [routerLink]="[dropDownItem.routerLink]"   
+        >
+        {{dropDownItem.text}}
+      </a>
+  </ng-template>
+</div>

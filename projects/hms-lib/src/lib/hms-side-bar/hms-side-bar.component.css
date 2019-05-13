@@ -1,0 +1,7 @@
+.list-group-flush * {
+    font-size: 90%;
+}
+
+.list-group-flush {
+    padding-inline-start: 0px;
+}
