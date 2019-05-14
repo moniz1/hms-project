@@ -25,11 +25,11 @@
     </ul>
 
     <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-        <li class="nav-item user-avatar">
-            <img [src]="headerModel.menuUser.avatar" class="logo rounded-circle" alt="user avatar logo"> 
-         </li>
-        <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle {{headerModel.menuUser.wrapperClass()}}" href="#" [menuItem]="headerModel.menuUser" hmsHeaderNavMenuAttr>{{headerModel.menuUser.text}}</a>
+        <li class="nav-item dropdown flex-grow-1">
+           <a class="nav-link dropdown-toggle {{headerModel.menuUser.wrapperClass()}}" href="#" [menuItem]="headerModel.menuUser" hmsHeaderNavMenuAttr>
+              <img [src]="headerModel.menuUser.avatar" class="logo rounded-circle" alt="user avatar logo"> 
+              {{headerModel.menuUser.text}}
+            </a>
            <hms-menu-drop-down-item [menuItem]="headerModel.menuUser"></hms-menu-drop-down-item>
         </li>
     </ul>
